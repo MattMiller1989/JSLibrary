@@ -3,10 +3,17 @@ function openBookForm(){
     const bookForm=document.getElementById('newBookForm');
     bookForm.style.display='block';
 }
-function bookSubmit(){
+function submitBook(){
+    let title=document.querySelector('#title').value;
+    let author=document.querySelector('#author').value;
+    let numPages=document.querySelector('#numPages').value;
+    let hasRead=document.querySelector('#hasRead').checked;
 
+    console.log(`title: ${title}\nauthor: ${author}\nnumPages: ${numPages}\nhasRead: ${hasRead}\n`);
+
+    closeForm();
 }
-function bookCancel(){
+function cancelBook(){
     closeForm();
 }
 function closeForm(){
