@@ -1,4 +1,25 @@
+
+<script src="library.js"></script>
 <head>Library</head>
 <body>
-    <button id='newBook'>New Book</button>
+    <div class='buttonHolder'>
+        <button id='newBook' onclick='openBookForm()'>New Book</button>
+    </div>
+
+    <div id='newBookForm'>
+        <form>
+            <label for='title'>Title:</label>
+            <input type='text' id='title'></input></br>
+
+            <label for='author'>Author:</label>
+            <input type='text' id='author'></input></br>
+
+            <label for='numPages'># of pages:</label>
+            <input type='number' id='numPages'></input></br>
+
+            <label for='hasRead'>This book has been read:</label>
+            <input type='checkbox' id='hasRead'></input></br>
+        </form>
+    </div> 
+
 </body>
