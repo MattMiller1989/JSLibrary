@@ -1,6 +1,9 @@
 
 <script src="library.js"></script>
-<head>Library</head>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <div class='buttonHolder'>
         <button id='newBook' onclick='openBookForm()'>New Book</button>
@@ -21,8 +24,8 @@
             <input type='checkbox' id='hasRead'></input></br>
 
             <div id='formButtonHolder'>
-                <p><button id = 'bookSubmit'>Submit</button>
-                <button id = 'bookCancel'>Cancel</button></p>
+                <p><button id = 'bookSubmit' onclick='submitBook()'>Submit</button>
+                <button id = 'bookCancel' onclick='cancelBook()'>Cancel</button></p>
             </div>
         </form>
     </div> 
