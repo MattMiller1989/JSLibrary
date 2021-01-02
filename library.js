@@ -1,5 +1,14 @@
 const bookForm=document.getElementById('newBookForm');
-//bookForm.classList.add('invisible');
+let myLibrary=[];
+
+function Book(title,author,numPages,hasRead){
+
+    this.title=title;
+    this.author=author;
+    this.numPages=numPages;
+    this.hasRead=hasRead;
+
+}
 function openBookForm(){
 
     bookForm.classList.remove('invisible');
