@@ -8,6 +8,25 @@ function Book(title,author,numPages,hasRead){
     this.numPages=numPages;
     this.hasRead=hasRead;
 
+    
+
+}
+
+Book.prototype.toString=function bookToString(){
+
+    let readStatus='';
+
+    if(this.hasRead){
+        readStatus='I have read this book';
+    }else{
+        readStaus='Too long, did not read';
+    }
+
+    return `Title: ${this.title}\nAuthor: ${this.author}\n# of pages: ${this.numPages}\n${readStatus}}`
+}
+function addToLibrary(newBook){
+    
+    myLibrary.push(newBook);
 }
 function openBookForm(){
 
@@ -36,7 +55,8 @@ function checkInput(){
 }
 function submitBook(title,author,numPages,hasRead){
    
-    console.log(`The book, ${title}, has been submitted yo`);
+    //console.log(`The book, ${title}, has been submitted yo`);
+
     closeForm();
     
 }
