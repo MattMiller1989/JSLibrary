@@ -1,5 +1,5 @@
 
-<script src="library.js"></script>
+
 
 <head>
     <link rel="stylesheet" href="style.css">
@@ -9,7 +9,7 @@
         <button id='newBook' onclick='openBookForm()'>New Book</button>
     </div>
 
-    <div id='newBookForm'>
+    <div id='newBookForm' class='invisible'>
         <form>
             <label for='title'>Title:</label>
             <input type='text' id='title'></input></br>
@@ -23,11 +23,13 @@
             <label for='hasRead'>This book has been read:</label>
             <input type='checkbox' id='hasRead'></input></br>
 
-            <div id='formButtonHolder'>
-                <p><button id = 'bookSubmit' onclick='submitBook()'>Submit</button>
-                <button id = 'bookCancel' onclick='cancelBook()'>Cancel</button></p>
-            </div>
+            <!-- <div id='formButtonHolder'> -->
+                <p><button id = 'bookSubmit' type='button' onclick='checkInput()' >Submit</button>
+                <button id = 'bookCancel' type='button' onclick='cancelBook()'>Cancel</button></p>
+            <!-- </div> -->
         </form>
     </div> 
 
 </body>
+
+<script src="library.js"></script>

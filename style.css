@@ -1,3 +1,7 @@
-#newBookForm{
+#newBookForm.invisible{
     display: none;
+}
+
+#newBookForm.visible{
+    display:block;
 }
