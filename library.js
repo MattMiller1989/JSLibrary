@@ -28,6 +28,11 @@ function addToLibrary(newBook){
     
     myLibrary.push(newBook);
 }
+function showLibrary(){
+    myLibrary.forEach(function(item){
+        console.log(item.toString())
+    })
+}
 function openBookForm(){
 
     bookForm.classList.remove('invisible');
