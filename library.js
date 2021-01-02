@@ -19,10 +19,10 @@ Book.prototype.toString=function bookToString(){
     if(this.hasRead){
         readStatus='I have read this book';
     }else{
-        readStaus='Too long, did not read';
+        readStatus='Too long, did not read';
     }
 
-    return `Title: ${this.title}\nAuthor: ${this.author}\n# of pages: ${this.numPages}\n${readStatus}}`
+    return `Title: ${this.title}\nAuthor: ${this.author}\n# of pages: ${this.numPages}\n${readStatus}`
 }
 function addToLibrary(newBook){
     
@@ -48,7 +48,7 @@ function checkInput(){
         
     }else{
 
-        console.log(`Title: ${title}\nAuthor: ${author}\n# of pages: ${numPages}\nHas Read?: ${hasRead}`);
+        //console.log(`Title: ${title}\nAuthor: ${author}\n# of pages: ${numPages}\nHas Read?: ${hasRead}`);
         submitBook(title,author,numPages,hasRead)
     }
    
@@ -56,7 +56,9 @@ function checkInput(){
 function submitBook(title,author,numPages,hasRead){
    
     //console.log(`The book, ${title}, has been submitted yo`);
-
+    bookToAdd=new Book(title,author,numPages,hasRead);
+    console.log(bookToAdd.toString());
+    addToLibrary(bookToAdd);
     closeForm();
     
 }
