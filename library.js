@@ -1,4 +1,5 @@
 const bookForm=document.getElementById('newBookForm');
+const dispWindow=document.getElementById('bookDisplayWindow');
 let myLibrary=[];
 
 function Book(title,author,numPages,hasRead){
@@ -40,6 +41,10 @@ function openBookForm(){
 
     
 }
+function openDisplayWindow(){
+    dispWindow.classList.remove('invisible');
+    dispWindow.classList.add('visible');
+}
 function checkInput(){
 
     let title=document.querySelector('#title').value;
@@ -79,3 +84,5 @@ function closeForm(){
     
 
 }
+
+

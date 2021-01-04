@@ -7,6 +7,7 @@
 <body>
     <div class='buttonHolder'>
         <button id='newBook' onclick='openBookForm()'>New Book</button>
+        <button id='openDisplay' onclick='openDisplayWindow()'>View Books</button>
     </div>
 
     <div id='newBookForm' class='invisible'>
@@ -29,6 +30,13 @@
             <!-- </div> -->
         </form>
     </div> 
+    <div id='bookDisplayWindow' class= 'invisible'>
+        <div id ='bookShelf'></div>
+        <div class='buttonHolder'>
+            <button id='newBook' onclick='openBookForm()'>New Book</button>
+            <button id='openDisplay' onclick='openDisplayWindow()'>View Books</button>
+        </div>
+    </div>
 
 </body>
 

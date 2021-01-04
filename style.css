@@ -5,3 +5,10 @@
 #newBookForm.visible{
     display:block;
 }
+#bookDisplayWindow.invisible{
+    display: none;
+}
+
+#bookDisplayWindow.visible{
+    display:block;
+}
